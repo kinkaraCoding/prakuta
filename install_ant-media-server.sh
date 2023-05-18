@@ -23,6 +23,7 @@ TOTAL_DISK_SPACE="$(df / --total -k -m --output=avail | tail -1 | xargs)"
 ARCH=`uname -m`
 RED='\033[0;31m'
 NC='\033[0m' 
+ID=ubuntu
 
 update_script () {
   SCRIPT_NAME="$0"
